@@ -1,0 +1,3 @@
+rootProject.name = 'spring-pratice'
+include 'mongo-multi-template'
+include 'spring-graphql'
