@@ -10,16 +10,8 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/mongo-multi-template" />
-            <option value="$PROJECT_DIR$/spring-graphql" />
-          </set>
-        </option>
-      </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/regex-test" />
-        <option name="modules">
-          <set>
             <option value="$PROJECT_DIR$/regex-test" />
+            <option value="$PROJECT_DIR$/spring-graphql" />
           </set>
         </option>
       </GradleProjectSettings>

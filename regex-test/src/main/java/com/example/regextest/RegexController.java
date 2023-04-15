@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class RegexController {
 
-    private final RegexService regexService;
+    private RegexService regexService;
 
     public RegexController(RegexService regexService) {
         this.regexService = regexService;

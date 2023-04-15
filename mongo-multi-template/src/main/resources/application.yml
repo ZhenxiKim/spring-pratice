@@ -1,0 +1,33 @@
+infra:
+    mongodb:
+        first:
+            host:
+            port:
+            name: first
+            username: admin
+            password: '1234'
+        second:
+            host:
+            port:
+            name: second
+            username: admin
+            password: '1234'
+        third:
+            host:
+            port:
+            name: third
+            username: admin
+            password: '1234'
+
+spring:
+    data:
+        mongodb:
+            first:
+                database: ${infra.mongodb.first.name}
+                uri: mongodb://${infra.mongodb.first.username}:${infra.mongodb.first.password}@${infra.mongodb.first.host}:${infra.mongodb.first.port}/${infra.mongodb.first.name}?connectTimeoutMS=100000&minPoolSize=0&maxPoolSize=16
+            second:
+                database: ${infra.mongodb.second.name}
+                uri: mongodb://${infra.mongodb.second.username}:${infra.mongodb.second.password}@${infra.mongodb.second.host}:${infra.mongodb.second.port}/${infra.mongodb.second.name}?connectTimeoutMS=100000&minPoolSize=0&maxPoolSize=16
+            third:
+                database: ${infra.mongodb.third.name}
+                uri: mongodb://${infra.mongodb.third.username}:${infra.mongodb.third.password}@${infra.mongodb.third.host}:${infra.mongodb.third.port}/${infra.mongodb.third.name}?connectTimeoutMS=100000&minPoolSize=0&maxPoolSize=16
